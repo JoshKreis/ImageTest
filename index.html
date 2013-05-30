@@ -2,13 +2,23 @@
 <html style="color: #fff; background: #000;">
 <head>
 <title>Title of the document</title>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+	<script type="text/javascript">
+		var viewportWidth = $(window).width();
+		var viewportHeight = $(window).height();
+		
+		$(document).ready(function(){
+			$("#okc").click(function(){
+				alert("You won this round.");
+			});
+		});
+	</script>		
 </head>
 
 <body>
 	<center>
-		<img src="http://www.joshuakreis.com/images/josh.jpg" style="width: 34%; height: 25%; border: 2px solid #fff;" />
-		<br />
-		<strong>Joshua Kreis</strong>
+		<img id="okc" src="http://www.joshuakreis.com/images/josh.jpg" />
 	</center>
 </body>
 
